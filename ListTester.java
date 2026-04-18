@@ -175,8 +175,9 @@ public class ListTester {
 			// Scenario: 03
 		testSingleElementList(emptyList_addToRearA_A,  "emptyList_addToRearA_A", LIST_A, STRING_A);
 			// Scenario: 04
-
+		testSingleElementList(emptyList_addA_A, "emptyList_addA_A", LIST_A, STRING_A);
 			// Scenario: 05
+		testSingleElementList(emptyList_add0A_A, "emptyList_add0A_A", LIST_A, STRING_A);
 
 			
 		//1-element to empty list
@@ -465,7 +466,7 @@ public class ListTester {
 	 * @return [B] after removeFirst()
 	 */
 	private IndexedUnsortedList<Integer> AB_removeFirst_B() {
-		IndexedUnsortedList<Integer> list = A_addToRearB_AB;
+		IndexedUnsortedList<Integer> list = A_addToRearB_AB();
 		list.removeFirst();
 		return list;
 	}
